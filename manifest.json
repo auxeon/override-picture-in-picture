@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Override Picture In Picture",
+  "version": "1.0",
+  "description": "Override Picture In Picture flags for all videos",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["overrider.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ]
+}
